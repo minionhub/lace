@@ -1,12 +1,12 @@
 
 <!doctype html>
-<html lang="en" itemscope itemtype="">
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title> LACE - Sign In</title>
-    <meta name="title" Content="LACE - Sign In">
+<title> LACE - Dashboard</title>
+    <meta name="title" Content="LACE - Dashboard">
     <meta name="description" content="We ensure you 100% satisfaction on bidding, we are the most trusted online auction platform, where you can sell all preferable items with ease.">
     <meta name="keywords" content="lace,bid,win,auction,live">
     <link rel="shortcut icon" href="./assets/images/logoIcon/favicon.png" type="image/x-icon">
@@ -15,9 +15,9 @@
     <link rel="apple-touch-icon" href="./assets/images/logoIcon/logo.png">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="LACE - Sign In">
+    <meta name="apple-mobile-web-app-title" content="LACE - Dashboard">
     
-    <meta itemprop="name" content="LACE - Sign In">
+    <meta itemprop="name" content="LACE - Dashboard">
     <meta itemprop="description" content="">
     <meta itemprop="image" content="">
     
@@ -34,7 +34,7 @@
 
 <!-- Custom Font
     ================================================== -->
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,700i,900&display=swap" rel="stylesheet">
 
     <!-- CSS
     ================================================== -->
@@ -60,19 +60,29 @@
     <link rel="stylesheet"
           href="./assets/templates/basic/css/color.php?color=f74a05&amp;secondColor=0b0e3c">
 
-        </head>
+        <style type="text/css">
+  #copyBoard{
+    cursor: pointer;
+  }
+  .form-control:disabled, .form-control[readonly] {
+        background-color: #121f42f5;
+        opacity: 1;
+    }
+    .input-group-text {
+        background-color: #0a1227;
+        border: 1px solid #373768;
+        color: #fff;
+    }
+</style>
+</head>
 <body>
-
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         Start Preloader
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<div class="preloader">
-    <div class="loader loader-4"></div>
-</div><!-- /preloader -->
-
-
-
+    <div class="preloader">
+        <div class="loader loader-4"></div>
+    </div><!-- /preloader -->
 
 <!--********************************************************-->
 <!--********************* SITE CONTENT *********************-->
@@ -93,16 +103,26 @@
                                         href="mailto:email@email.com">email@email.com</a>
                                 </li>
                                 <li class="temperature"><span class="fa fa-phone"></span>Call Us                                    : 123-456-7890 </li>
+                                <!-- <li>
+                                    <span class="fa fa-globe"></span>
+                                    <select class="langSel border-0 bg-transparent text-muted" >
+                                        <option value="">Select One</option>
+                                                                                    <option value="en"  selected  >English</option>
+                                                                                    <option value="hn" >Hindi</option>
+                                                                                    <option value="bn" >Bangla</option>
+                                                                            </select>
+                                </li> -->
                             </ul>
                         </div><!--~./ top-navbar-left ~-->
                     </div>
                     <div class="col-lg-5">
                         <div class="top-navbar-right">
                             <div class="user-registration-area">
-                                                                    <a class="user-reg-btn" href="./Dashboard.html">
-                                        <span class="icon-user-1"></span>
-                                        Dashboard                                    </a>
-                                                            </div>
+                                <a class="user-reg-btn" href="./Home.html">
+                                    <span class="icon-user-1"></span>
+                                    Home
+                                </a>
+                            </div>
                         </div><!--~./ top-navbar-right ~-->
                     </div>
                 </div>
@@ -124,46 +144,41 @@
                             <div class="mainmenu-area">
                                 <nav class="menu">
                                     <ul id="nav">
-                                        <li><a href="./Home.html">Home</a></li>
+                                        <li><a href="">Dashboard</a></li>
 
-                                        <li><a href="./About.html">About</a>
-                                        </li>
-                                        <li><a href="./Faq.html">Faq</a>
-                                        </li>
-                                        <li><a href="./Category.html">Category</a>
+                                        <li class="dropdown-trigger">
+                                            <a href="javascript:void(0)">Deposit</a>
+                                            <ul class="dropdown-content">
+                                                <li><a href="./DepositMethods.html">Deposit Methods</a></li>
+                                                <li><a href="./DepositHistory.html">Deposit Log</a></li>
+                                            </ul>
                                         </li>
 
-                                        <li><a href="./LiveAuction.html">Live Auction</a></li>
-                                        <li><a href="./Blog.html">Blog</a></li>
-                                        <li><a href="./Contact.html">Contact</a></li>
+                                        <li><a href="./WinningProducts.html">Winning Products</a></li>
+                                        <li><a href="./MyBids.html">My Bids</a></li>
+                                        <li><a href="./MyReferrals.html">Referrals</a></li>
+                                        <li><a href="./TransactionsHistory.html">Transactions</a></li>
+
+                                        <li class="dropdown-trigger">
+                                            <a href="javascript:void(0)">Ticket</a>
+                                            <ul class="dropdown-content">
+                                                <li><a href="./SupportTickets.html">Create New</a></li>
+                                                <li><a href="./MyTickets.html">My Ticket</a></li>
+                                            </ul>
+                                        </li>
 
                                         <li class="dropdown-trigger">
                                             <a href="javascript:void(0)">Account</a>
                                             <ul class="dropdown-content">
-                                                <li>
-                                                    <a href="./Login.html">Login</a>
-                                                </li>
-                                                <li>
-                                                    <a href="./Register.html">Register</a>
-                                                </li>
+                                                <li><a href="./ChangePassword.html">Change Password</a></li>
+                                                <li><a href="./ProfileSetting.html">Profile Setting</a></li>
+                                                <li><a href="./TwoFactor.html">2FA Security</a></li>
+                                                <li><a href="./Home.html">Logout</a></li>
                                             </ul>
                                         </li>
 
                                     </ul> <!-- /.menu-list -->
                                 </nav><!--/.menu-->
-                                <div class="header-navigation-right">
-                                    <div class="search-wrap">
-                                        <div class="search-btn">
-                                            <i class="fas fa-search"></i>
-                                        </div>
-                                        <div class="search-form">
-                                            <form action="" method="get">
-                                                <input type="search" placeholder="Search by product name" name="product" required>
-                                                <button type="submit"><i class="fas fa-search"></i></button>
-                                            </form>
-                                        </div>
-                                    </div><!--~./ search-wrap ~-->
-                                </div>
                             </div><!--~./ mainmenu-wrap ~-->
                         </div><!--~./ navigation-area ~-->
                     </div><!--  /.col-12 -->
@@ -189,9 +204,8 @@
     <!--~~~ Sticky Header ~~~-->
     <div id="sticky-header"></div><!--~./ end sticky header ~-->
 
-
     <!--breadcrumb area-->
-            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
             Start Page Title Area
         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div class="page-title-area bg-white-smoke">
@@ -200,12 +214,12 @@
             <div class="col-12">
                 <div class="page-header-content text-center">
                     <div class="page-header-caption">
-                        <h2 class="page-title">Sign In</h2>
+                        <h2 class="page-title">My Referrals</h2>
                     </div><!--~~./ page-header-caption ~~-->
                     <div class="breadcrumb-area">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="">Home</a></li>
-                            <li class="breadcrumb-item active">Sign In</li>
+                            <li class="breadcrumb-item active">My Referrals</li>
                         </ol>
                     </div><!--~~./ breadcrumb-area ~~-->
                 </div><!--~~./ page-header-content ~~-->
@@ -216,84 +230,38 @@
     <!--/breadcrumb area-->
 
 
-    
-        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            User Signin Block
-        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-    <div class="user-signin-block ptb-120">
+
+        <section class="ptb-120">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="sing-in-mockup md-mrb-60">
-                        <img src="./assets/images/frontend/account_image/60583cb3bc7ec1616395443.png" alt="Mockup">
-                    </div>
-                </div><!--/.col-lg-2-->
-                <div class="col-lg-6">
-                    <div class="user-register-area">
-                        <div class="form-content">
-                            <div class="form-header">
-                                <h4 class="form-subheading">Sign in here</h4>
-                                <h2 class="heading">Welcome To LACE</h2>
-                            </div>
+            <div class="table-responsive custom-box-shadow">
+                <table class="table custom--table">
+                    <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Username</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Phone</th>
+                        <th scope="col">Total Deposit</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                            <tr>
+                            <td colspan="100%"> No results found!</td>
+                        </tr>
+                                        </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
 
-
-                            <form class="default-form signin-form" method="POST" action=""
-                                  onsubmit="return submitUserForm();">
-                                <input type="hidden" name="_token" value="k7kfprx8HSbcfdltShPhMBjjt7hAhNbuAslaFFdJ">
-                                <div class="form-group">
-                                    <label for="username">Username or Email</label>
-                                    <input type="text" id="username" name="username" value="" placeholder="Enter Your Username or Email" class="form-controller" required>
-                                </div><!--/.form-group-->
-
-                                <div class="form-group">
-                                    <label for="password">Password</label>
-                                    <input id="password" type="password" class="form-controller" name="password" autocomplete="current-password" placeholder="Enter Your Password" required>
-                                </div><!--/.form-group-->
-
-                                <div class="form-group row">
-                                    <div class="col-md-3 ">
-                                    </div>
-                                    <div class="col-md-6 ">
-                                                                            </div>
-                                </div>
-                                <div class="form-group">
-        <link href="https://fonts.googleapis.com/css?family=Henny+Penny&display=swap" rel="stylesheet"><div style="height: 46px; line-height: 46px; width:100%; text-align: center; background-color: #003; color: #f74a05; font-size: 26px; font-weight: bold; letter-spacing: 20px; font-family: 'Henny Penny', cursive;  -webkit-user-select: none; -moz-user-select: none;-ms-user-select: none;user-select: none;  display: flex; justify-content: center;"><span style="    float:left;     -webkit-transform: rotate(33deg);">6</span><span style="    float:left;     -webkit-transform: rotate(2deg);">8</span><span style="    float:left;     -webkit-transform: rotate(-7deg);">8</span><span style="    float:left;     -webkit-transform: rotate(-35deg);">0</span><span style="    float:left;     -webkit-transform: rotate(-31deg);">4</span><span style="    float:left;     -webkit-transform: rotate(-51deg);">7</span></div><input type="hidden" name="captcha_secret" value="1bac018610f404c97ac62a553c9db36d15cb6ea6f5d97bdf89e227957f54fb4d">    </div>
-    <div class="form-group">
-        <input type="text" name="captcha" placeholder="Enter Code" class="form-controller">
-    </div>
-
-                                <div class="remember-and-password">
-                                    <div class="login-form-remember">
-                                        <label for="remembermesignin"><input id="remembermesignin" name="remember" type="checkbox" ><span>Remember Me</span></label>
-                                    </div>
-                                    <div class="forget-pass">
-                                        <a class="btn-password" href="">Forget Password?</a>
-                                    </div>
-                                </div><!--/.remember-and-password-->
-
-                                <div class="form-btn-group">
-                                    <div class="form-login-area">
-                                        <button type="submit" id="recaptcha" class="btn btn-default">
-                                            Login                                        </button>
-                                    </div>
-                                    <div class="login-form-register-now">
-                                        You have no account? <a class="btn-register-now" href="">Register</a>
-                                    </div>
-                                </div>
-                            </form>
-
-
-                        </div>
-                    </div><!--~./ end user register area ~-->
-                </div><!-- /.col-lg-10 -->
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </div><!--~~./ end user signin block ~~-->
 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
             Start Site Footer
         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Start Footer Widget Area
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
         <footer class="site-footer pd-t-120">
             <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
             Start Footer Widget Area
@@ -412,8 +380,6 @@
 
 </div><!--~~./ end site content ~~-->
 
-
-
 <!-- All The JS Files
     ================================================== -->
 <script src="./assets/templates/basic/js/jquery.js"></script>
@@ -433,22 +399,18 @@
 <script src="./assets/templates/basic/js/yscountdown.min.js"></script>
 <script src="./assets/templates/basic/js/owl.carousel.min.js"></script>
 <script src="./assets/templates/basic/js/main.js"></script><!-- main-js -->
-<script src="./assets/templates/basic/js/typed.js"></script><!-- main-js -->
 
 
     <script>
+      $('.copyBoard').click(function(){
         "use strict";
-        function submitUserForm() {
-            var response = grecaptcha.getResponse();
-            if (response.length == 0) {
-                document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">Captcha field is required.</span>';
-                return false;
-            }
-            return true;
-        }
-        function verifyCaptcha() {
-            document.getElementById('g-recaptcha-error').innerHTML = '';
-        }
+            var copyText = document.getElementById("referralURL");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999);
+            /*For mobile devices*/
+            document.execCommand("copy");
+            iziToast.success({message: "Copied: " + copyText.value, position: "topRight"});
+      });
     </script>
 
 
@@ -471,18 +433,6 @@
         "use strict";
         $(document).on("change", ".langSel", function () {
             window.location.href = "";
-        });
-
-        $('.policy').on('click',function(){
-            $.ajaxSetup({
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                }
-            });
-            $.get('', function(response){
-                iziToast.success({message: response, position: "topRight"});
-                $('.cookie__wrapper').addClass('d-none');
-            });
         });
     })(jQuery);
 </script>

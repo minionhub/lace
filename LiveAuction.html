@@ -1,12 +1,12 @@
 
 <!doctype html>
-<html lang="en" itemscope itemtype="">
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title> LACE - Sign In</title>
-    <meta name="title" Content="LACE - Sign In">
+<title> LACE - Live Auction</title>
+    <meta name="title" Content="LACE - Live Auction">
     <meta name="description" content="We ensure you 100% satisfaction on bidding, we are the most trusted online auction platform, where you can sell all preferable items with ease.">
     <meta name="keywords" content="lace,bid,win,auction,live">
     <link rel="shortcut icon" href="./assets/images/logoIcon/favicon.png" type="image/x-icon">
@@ -15,9 +15,9 @@
     <link rel="apple-touch-icon" href="./assets/images/logoIcon/logo.png">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="LACE - Sign In">
+    <meta name="apple-mobile-web-app-title" content="LACE - Live Auction">
     
-    <meta itemprop="name" content="LACE - Sign In">
+    <meta itemprop="name" content="LACE - Live Auction">
     <meta itemprop="description" content="">
     <meta itemprop="image" content="">
     
@@ -60,7 +60,21 @@
     <link rel="stylesheet"
           href="./assets/templates/basic/css/color.php?color=f74a05&amp;secondColor=0b0e3c">
 
-        </head>
+            <style>
+        #amount:focus {
+            background: transparent;
+            box-shadow: none;
+        }
+
+        .custom_border {
+            border-bottom: 1px solid #e9ecef4f;
+        }
+
+        .custom_border_span {
+            border: 1px solid #373768;
+        }
+    </style>
+</head>
 <body>
 
 
@@ -138,7 +152,7 @@
                                         <li><a href="./Contact.html">Contact</a></li>
 
                                         <li class="dropdown-trigger">
-                                            <a href="javascript:void(0)">Account</a>
+                                            <a href="javascript:void(0);">Account</a>
                                             <ul class="dropdown-content">
                                                 <li>
                                                     <a href="./Login.html">Login</a>
@@ -200,12 +214,12 @@
             <div class="col-12">
                 <div class="page-header-content text-center">
                     <div class="page-header-caption">
-                        <h2 class="page-title">Sign In</h2>
+                        <h2 class="page-title">Live Auction</h2>
                     </div><!--~~./ page-header-caption ~~-->
                     <div class="breadcrumb-area">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="">Home</a></li>
-                            <li class="breadcrumb-item active">Sign In</li>
+                            <li class="breadcrumb-item active">Live Auction</li>
                         </ol>
                     </div><!--~~./ breadcrumb-area ~~-->
                 </div><!--~~./ page-header-content ~~-->
@@ -216,79 +230,144 @@
     <!--/breadcrumb area-->
 
 
-    
-        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            User Signin Block
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Live Auction Block
         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-    <div class="user-signin-block ptb-120">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="sing-in-mockup md-mrb-60">
-                        <img src="./assets/images/frontend/account_image/60583cb3bc7ec1616395443.png" alt="Mockup">
-                    </div>
-                </div><!--/.col-lg-2-->
-                <div class="col-lg-6">
-                    <div class="user-register-area">
-                        <div class="form-content">
-                            <div class="form-header">
-                                <h4 class="form-subheading">Sign in here</h4>
-                                <h2 class="heading">Welcome To LACE</h2>
+<div class="live-auction-block bg-white-smoke ptb-120">
+    <div class="container ml-b-30">
+        <div class="row items-two-1199 justify-content-center">
+
+                            <div class="col-lg-4 col-md-6">
+                    <div class="auction-item">
+                        <div class="item-header">
+                            <h3 class="heading"><a href="">cannabis1</a></h3>
+                            <div class="auction-id">Category: Category1</div>
+                        </div><!-- /.item-footer -->
+                        <div class="item-img">
+                            <a href="">
+                                                                                                            <img src="./assets/images/products/651e43c9bc1091696482249.png"
+                                             alt="Thumbnail">
+                                                                                                                                                                                                                        <img class="prod2"
+                                             src="./assets/images/products/651e43ca1812c1696482250.png"
+                                             alt="Thumbnail">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </a>
+                            <div class="bid-max">0 x <span class="icon-user-1"></span></div>
+                                                            <div class="item-price">No Bid Yet</div>
+                                                    </div><!-- /.item-img -->
+                        <div class="item-footer">
+                            <div class="item-footer-top">
+                                <div
+                                    class="bid-price">$5000</div>
+                                <div class="bid-timer-area">
+                                    <div id="bid_counter1"
+                                         class="bid-timer">2023-10-19 12:00:00</div>
+                                    <p>Waiting For Bid</p>
+                                </div>
                             </div>
-
-
-                            <form class="default-form signin-form" method="POST" action=""
-                                  onsubmit="return submitUserForm();">
-                                <input type="hidden" name="_token" value="k7kfprx8HSbcfdltShPhMBjjt7hAhNbuAslaFFdJ">
-                                <div class="form-group">
-                                    <label for="username">Username or Email</label>
-                                    <input type="text" id="username" name="username" value="" placeholder="Enter Your Username or Email" class="form-controller" required>
-                                </div><!--/.form-group-->
-
-                                <div class="form-group">
-                                    <label for="password">Password</label>
-                                    <input id="password" type="password" class="form-controller" name="password" autocomplete="current-password" placeholder="Enter Your Password" required>
-                                </div><!--/.form-group-->
-
-                                <div class="form-group row">
-                                    <div class="col-md-3 ">
-                                    </div>
-                                    <div class="col-md-6 ">
-                                                                            </div>
+                            <div class="bid-button">
+                                                                    <a href="javascript:void(0)" class="btn btn-default bidBtn" data-toggle="tooltip"
+                                       data-url=""
+                                       data-min_bid_amount="Bid First! Minimum bid price 5000USD"
+                                       data-shipping_cost="100"
+                                       data-name="cannabis1">
+                                                                                    Bid Now                                                                            </a>
+                                
+                            </div>
+                        </div><!-- /.item-footer -->
+                    </div><!-- /.auction-item -->
+                </div><!-- /.col-lg-4 -->
+                            <div class="col-lg-4 col-md-6">
+                    <div class="auction-item">
+                        <div class="item-header">
+                            <h3 class="heading"><a href="">cannabis2</a></h3>
+                            <div class="auction-id">Category: Category2</div>
+                        </div><!-- /.item-footer -->
+                        <div class="item-img">
+                            <a href="">
+                                                                                                            <img src="./assets/images/products/651e4f0ad0de91696485130.png"
+                                             alt="Thumbnail">
+                                                                                                                                                                                                                        <img class="prod2"
+                                             src="./assets/images/products/651e4f0b39ff11696485131.png"
+                                             alt="Thumbnail">
+                                                                                                                                                                                                        </a>
+                            <div class="bid-max">0 x <span class="icon-user-1"></span></div>
+                                                            <div class="item-price">No Bid Yet</div>
+                                                    </div><!-- /.item-img -->
+                        <div class="item-footer">
+                            <div class="item-footer-top">
+                                <div
+                                    class="bid-price">$6000</div>
+                                <div class="bid-timer-area">
+                                    <div id="bid_counter2"
+                                         class="bid-timer">2023-10-19 12:00:00</div>
+                                    <p>Waiting For Bid</p>
                                 </div>
-                                <div class="form-group">
-        <link href="https://fonts.googleapis.com/css?family=Henny+Penny&display=swap" rel="stylesheet"><div style="height: 46px; line-height: 46px; width:100%; text-align: center; background-color: #003; color: #f74a05; font-size: 26px; font-weight: bold; letter-spacing: 20px; font-family: 'Henny Penny', cursive;  -webkit-user-select: none; -moz-user-select: none;-ms-user-select: none;user-select: none;  display: flex; justify-content: center;"><span style="    float:left;     -webkit-transform: rotate(33deg);">6</span><span style="    float:left;     -webkit-transform: rotate(2deg);">8</span><span style="    float:left;     -webkit-transform: rotate(-7deg);">8</span><span style="    float:left;     -webkit-transform: rotate(-35deg);">0</span><span style="    float:left;     -webkit-transform: rotate(-31deg);">4</span><span style="    float:left;     -webkit-transform: rotate(-51deg);">7</span></div><input type="hidden" name="captcha_secret" value="1bac018610f404c97ac62a553c9db36d15cb6ea6f5d97bdf89e227957f54fb4d">    </div>
-    <div class="form-group">
-        <input type="text" name="captcha" placeholder="Enter Code" class="form-controller">
+                            </div>
+                            <div class="bid-button">
+                                                                    <a href="javascript:void(0)" class="btn btn-default bidBtn" data-toggle="tooltip"
+                                       data-url=""
+                                       data-min_bid_amount="Bid First! Minimum bid price 6000USD"
+                                       data-shipping_cost="100"
+                                       data-name="cannabis2">
+                                                                                    Bid Now                                                                            </a>
+                                
+                            </div>
+                        </div><!-- /.item-footer -->
+                    </div><!-- /.auction-item -->
+                </div><!-- /.col-lg-4 -->
+            
+        </div><!-- /.row -->
+
+        <div class="d-flex justify-content-center">
+            
+        </div>
     </div>
-
-                                <div class="remember-and-password">
-                                    <div class="login-form-remember">
-                                        <label for="remembermesignin"><input id="remembermesignin" name="remember" type="checkbox" ><span>Remember Me</span></label>
-                                    </div>
-                                    <div class="forget-pass">
-                                        <a class="btn-password" href="">Forget Password?</a>
-                                    </div>
-                                </div><!--/.remember-and-password-->
-
-                                <div class="form-btn-group">
-                                    <div class="form-login-area">
-                                        <button type="submit" id="recaptcha" class="btn btn-default">
-                                            Login                                        </button>
-                                    </div>
-                                    <div class="login-form-register-now">
-                                        You have no account? <a class="btn-register-now" href="">Register</a>
-                                    </div>
-                                </div>
-                            </form>
+</div><!-- /.live-auction-block -->
 
 
+<!-- The Modal -->
+<div class="modal fade" id="bidModal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-white-smoke">
+
+            <!-- Modal Header -->
+            <div class="modal-header custom_border">
+                <h4 class="modal-title text-muted">Bid Now</h4>
+                <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+            </div>
+
+            <form action="" method="post">
+                <input type="hidden" name="_token" value="5lxn8Yi1wdVAiom62n8m2R9LCWpGH2ImcpzbC60V">
+                <!-- Modal body -->
+                <div class="modal-body custom_border">
+                    <div class="form-group">
+                        <label for="amount">Bid Amount</label>
+                        <div class="input-group">
+                            <input id="amount" type="text" class="form-control form-controller"
+                                   onkeyup="this.value = this.value.replace (/^\.|[^\d\.]/g, '')" name="amount"
+                                   placeholder="0.00" required="" value="" autocomplete="off">
+                            <div class="input-group-prepend">
+                                <span
+                                    class="input-group-text bg-white-smoke custom_border_span text-light">USD</span>
+                            </div>
                         </div>
-                    </div><!--~./ end user register area ~-->
-                </div><!-- /.col-lg-10 -->
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </div><!--~~./ end user signin block ~~-->
+                    </div>
+
+                    <p class="text-success text-center min_bid_amount"></p>
+                    <p class="text-success text-center">Shipping Cost <span id="shipping_cost"></span> USD</p>
+                    <p class="text-success text-center total_payable"></p>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer border-0">
+                    <button type="submit" class="btn btn-primary rounded">Bid Now</button>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</div>
 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -437,18 +516,63 @@
 
 
     <script>
-        "use strict";
-        function submitUserForm() {
-            var response = grecaptcha.getResponse();
-            if (response.length == 0) {
-                document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">Captcha field is required.</span>';
-                return false;
+        (function ($) {
+            "use strict";
+
+            /* ---------------------------------------------
+                ## Auction Count Down
+            --------------------------------------------- */
+            var i;
+            for (i = 1; i <= 2; i++) {
+                var selector = '#bid_counter' + i;
+
+                if ($(selector).length) {
+                    // If you need specific date then comment out 1 and comment in 2
+                    // let endDate = "2021/05/20"; //comment out this 1
+                    let endDate = $(selector).text(); //comment out this 1
+                    // let endDate = (new Date().getFullYear()) + '/' + (new Date().getMonth() + 1) + '/' + (new Date().getDate() + 1); // comment in this 2
+                    let counterElement = document.querySelector(selector);
+                    let myCountDown = new ysCountDown(endDate, function (remaining, finished) {
+                        let message = "";
+                        if (finished) {
+                            message = "Expired";
+                        } else {
+                            var re_hours = (remaining.totalDays * 24) + remaining.hours;
+                            message += re_hours + " : ";
+                            message += remaining.minutes + " : ";
+                            message += remaining.seconds;
+                        }
+                        counterElement.textContent = message;
+                    });
+                }
             }
-            return true;
-        }
-        function verifyCaptcha() {
-            document.getElementById('g-recaptcha-error').innerHTML = '';
-        }
+
+            // Bid
+            $('.bidBtn').on('click', function () {
+                $('#amount').val("");
+
+                var modal = $('#bidModal');
+                var url = $(this).data('url');
+                var min_bid_amount = $(this).data('min_bid_amount');
+                var shipping_cost = $(this).data('shipping_cost');
+
+                $('.min_bid_amount').text(min_bid_amount);
+                $('#shipping_cost').text(shipping_cost);
+
+                modal.find('form').attr('action', url);
+                modal.modal('show');
+
+                $(document).on("keyup", "#amount", function () {
+                    var amount = $(this).val();
+                    var total_payable = (parseFloat(shipping_cost) + parseFloat(amount));
+                    if(amount){
+                        $('.total_payable').text('Total Payable Amount '+ total_payable + "USD");
+                    }else {
+                        $('.total_payable').text('');
+                    }
+                });
+            });
+        })(jQuery);
     </script>
 
 

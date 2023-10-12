@@ -1,12 +1,12 @@
 
 <!doctype html>
-<html lang="en" itemscope itemtype="">
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title> LACE - Profile Setting</title>
-    <meta name="title" Content="LACE - Profile Setting">
+<title> LACE - Dashboard</title>
+    <meta name="title" Content="LACE - Dashboard">
     <meta name="description" content="We ensure you 100% satisfaction on bidding, we are the most trusted online auction platform, where you can sell all preferable items with ease.">
     <meta name="keywords" content="lace,bid,win,auction,live">
     <link rel="shortcut icon" href="./assets/images/logoIcon/favicon.png" type="image/x-icon">
@@ -15,9 +15,9 @@
     <link rel="apple-touch-icon" href="./assets/images/logoIcon/logo.png">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="LACE - Profile Setting">
+    <meta name="apple-mobile-web-app-title" content="LACE - Dashboard">
     
-    <meta itemprop="name" content="LACE - Profile Setting">
+    <meta itemprop="name" content="LACE - Dashboard">
     <meta itemprop="description" content="">
     <meta itemprop="image" content="">
     
@@ -60,15 +60,20 @@
     <link rel="stylesheet"
           href="./assets/templates/basic/css/color.php?color=f74a05&amp;secondColor=0b0e3c">
 
-        <link href="./assets/templates/basic/css/bootstrap-fileinput.css" rel="stylesheet">
-        <link rel="stylesheet" href="./assets/admin/build/css/intlTelInput.css">
-    <style>
-        .intl-tel-input {
-            position: relative;
-            display: inline-block;
-            width: 100%;!important;
-        }
-    </style>
+        <style type="text/css">
+  #copyBoard{
+    cursor: pointer;
+  }
+  .form-control:disabled, .form-control[readonly] {
+        background-color: #121f42f5;
+        opacity: 1;
+    }
+    .input-group-text {
+        background-color: #0a1227;
+        border: 1px solid #373768;
+        color: #fff;
+    }
+</style>
 </head>
 <body>
 
@@ -112,26 +117,10 @@
                     </div>
                     <div class="col-lg-5">
                         <div class="top-navbar-right">
-                            <div class="header-social-area">
-                                <!-- <ul class="header-social-share">
-                                                                            <li>
-                                            <a href="https://www.facebook.com/"><i class="lab la-facebook-f"></i></a>
-                                        </li>
-                                                                            <li>
-                                            <a href="https://www.twitter.com/"><i class="lab la-twitter"></i></a>
-                                        </li>
-                                                                            <li>
-                                            <a href="https://www.instagram.com/"><i class="lab la-instagram"></i></a>
-                                        </li>
-                                                                            <li>
-                                            <a href="https://www.google.com/"><i class="lab la-google-plus"></i></a>
-                                        </li>
-                                                                    </ul> -->
-                            </div>
                             <div class="user-registration-area">
-                                <a class="user-reg-btn" href="">
+                                <a class="user-reg-btn" href="./Home.html">
                                     <span class="icon-user-1"></span>
-                                    User
+                                    Home
                                 </a>
                             </div>
                         </div><!--~./ top-navbar-right ~-->
@@ -160,31 +149,31 @@
                                         <li class="dropdown-trigger">
                                             <a href="javascript:void(0)">Deposit</a>
                                             <ul class="dropdown-content">
-                                                <li><a href="">Deposit Money</a></li>
-                                                <li><a href="">Deposit Log</a></li>
+                                                <li><a href="./DepositMethods.html">Deposit Methods</a></li>
+                                                <li><a href="./DepositHistory.html">Deposit Log</a></li>
                                             </ul>
                                         </li>
 
-                                        <li><a href="">Winning Products</a></li>
-                                        <li><a href="">My Bids</a></li>
-                                        <li><a href="">Referrals</a></li>
-                                        <li><a href="">Transactions</a></li>
+                                        <li><a href="./WinningProducts.html">Winning Products</a></li>
+                                        <li><a href="./MyBids.html">My Bids</a></li>
+                                        <li><a href="./MyReferrals.html">Referrals</a></li>
+                                        <li><a href="./TransactionsHistory.html">Transactions</a></li>
 
                                         <li class="dropdown-trigger">
                                             <a href="javascript:void(0)">Ticket</a>
                                             <ul class="dropdown-content">
-                                                <li><a href="">Create New</a></li>
-                                                <li><a href="">My Ticket</a></li>
+                                                <li><a href="./SupportTickets.html">Create New</a></li>
+                                                <li><a href="./MyTickets.html">My Ticket</a></li>
                                             </ul>
                                         </li>
 
                                         <li class="dropdown-trigger">
                                             <a href="javascript:void(0)">Account</a>
                                             <ul class="dropdown-content">
-                                                <li><a href="">Change Password</a></li>
-                                                <li><a href="">Profile Setting</a></li>
-                                                <li><a href="">2FA Security</a></li>
-                                                <li><a href="">Logout</a></li>
+                                                <li><a href="./ChangePassword.html">Change Password</a></li>
+                                                <li><a href="./ProfileSetting.html">Profile Setting</a></li>
+                                                <li><a href="./TwoFactor.html">2FA Security</a></li>
+                                                <li><a href="./Home.html">Logout</a></li>
                                             </ul>
                                         </li>
 
@@ -225,12 +214,12 @@
             <div class="col-12">
                 <div class="page-header-content text-center">
                     <div class="page-header-caption">
-                        <h2 class="page-title">Profile Setting</h2>
+                        <h2 class="page-title">My Bids</h2>
                     </div><!--~~./ page-header-caption ~~-->
                     <div class="breadcrumb-area">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="">Home</a></li>
-                            <li class="breadcrumb-item active">Profile Setting</li>
+                            <li class="breadcrumb-item active">My Bids</li>
                         </ol>
                     </div><!--~~./ breadcrumb-area ~~-->
                 </div><!--~~./ page-header-content ~~-->
@@ -242,83 +231,30 @@
 
 
 
-        <div class="container ptb-120">
-        <div class="row justify-content-center mt-4">
-            <div class="col-md-12">
-                <div class="card custom-box-shadow bg-white-smoke">
-                    <div class="card-body">
-                        <form class="register" action="" method="post" enctype="multipart/form-data">
-                            <input type="hidden" name="_token" value="A2a68vWADljUWkdffX7Wd1zKz9FYrftD0IRKmsHF">
-                            <div class="profile-thumb-wrapper text-center">
-                                <div class="profile-thumb">
-                                    <div class="avatar-preview">
-                                        <div class="profilePicPreview" style="background-image: url('./assets/images/user/profile/1696486665_minionhub007.jpg')"></div>
-                                    </div>
-                                    <div class="avatar-edit">
-                                        <input type="file" class="profilePicUpload" id="profilePicUpload1" name="image" accept="image/*">
-                                        <label for="profilePicUpload1"><i class="la la-pencil"></i></label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row mt-5">
-                                <div class="form-group col-sm-6">
-                                    <label for="InputFirstname" class="col-form-label">First Name:</label>
-                                    <input type="text" class="form-controller" id="InputFirstname" name="firstname" placeholder="First Name" value="" >
-                                </div>
-                                <div class="form-group col-sm-6">
-                                    <label for="lastname" class="col-form-label">Last Name:</label>
-                                    <input type="text" class="form-controller" id="lastname" name="lastname" placeholder="Last Name" value="">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-group col-sm-6">
-                                    <label for="email" class="col-form-label">E-mail Address:</label>
-                                    <input type="email" class="form-controller" id="email" name="email" placeholder="E-mail Address" value="" readonly>
-                                </div>
-                                <div class="form-group col-sm-6">
-                                    <input type="hidden" id="track" name="country_code">
-                                    <label for="phone" class="col-form-label">Mobile Number</label>
-                                    <input type="tel" class="form-controller pranto-control" id="phone" name="mobile" value="" placeholder="Your Contact Number" readonly>
-                                </div>
-                                <input type="hidden" name="country" id="country" class="form-controller d-none" value="">
-                            </div>
-                            <div class="row">
-                                <div class="form-group col-sm-6">
-                                    <label for="address" class="col-form-label">Address:</label>
-                                    <input type="text" class="form-controller" id="address" name="address" placeholder="Address" value="" required="">
-                                </div>
-                                <div class="form-group col-sm-6">
-                                    <label for="state" class="col-form-label">State:</label>
-                                    <input type="text" class="form-controller" id="state" name="state" placeholder="State" value="" required="">
-                                </div>
-                            </div>
-
-
-                            <div class="row">
-                                <div class="form-group col-sm-6">
-                                    <label for="zip" class="col-form-label">Zip Code:</label>
-                                    <input type="text" class="form-controller" id="zip" name="zip" placeholder="Zip Code" value="" required="">
-                                </div>
-
-                                <div class="form-group col-sm-6">
-                                    <label for="city" class="col-form-label">City:</label>
-                                    <input type="text" class="form-controller" id="city" name="city" placeholder="City" value="" required="">
-                                </div>
-
-                            </div>
-
-                            <div class="form-group row">
-                                <div class="col-sm-12 text-center">
-                                    <button type="submit" class="btn btn-block btn-default">Update Profile</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+        <section class="ptb-120">
+        <div class="container">
+            <div class="table-responsive custom-box-shadow">
+                <table class="table custom--table">
+                    <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Date</th>
+                        <th scope="col">Product</th>
+                        <th scope="col">Bid Amount</th>
+                        <th scope="col">Shipping Cost</th>
+                        <th scope="col">Total Amount</th>
+                        <th scope="col">Bid Status</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                    <tr>
+                                <td colspan="100%"> No results found!</td>
+                            </tr>
+                                            </tbody>
+                </table>
             </div>
         </div>
-    </div>
+    </section>
 
 
 
@@ -329,74 +265,76 @@
             Start Footer Widget Area
         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-    <footer class="site-footer pd-t-120">
-        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        <footer class="site-footer pd-t-120">
+            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
             Start Footer Widget Area
         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-        <div class="footer-widget-area">
-            <div class="container">
-                <div class="row">
-                    <!--~~~~~ Start Widget About us ~~~~~-->
-                    <div class="col-lg-4">
-                        <aside class="widget widget_about">
-                            <h2 class="widget-title">About Us</h2>
-                            <div class="widget-content">
-                                <p>Our greatest asset is the reputation we have built over the years in terms of reliability, integrity, transparency, trust, and excellence in the auctioning services</p>
-                            </div>
-                        </aside>
-                    </div><!--~./ end about us widget ~-->
+            <div class="footer-widget-area">
+                <div class="container">
+                    <div class="row">
+                        <!--~~~~~ Start Widget About us ~~~~~-->
+                        <div class="col-lg-4">
+                            <aside class="widget widget_about">
+                                <h2 class="widget-title">About Us</h2>
+                                <div class="widget-content">
+                                    <p>Our greatest asset is the reputation we have built over the years in terms of
+                                        reliability, integrity, transparency, trust, and excellence in the auctioning
+                                        services</p>
+                                </div>
+                            </aside>
+                        </div><!--~./ end about us widget ~-->
 
-                    <!--~~~~~ Start Widget Links ~~~~~-->
-                    <div class="col-lg-2">
-                        <aside class="widget widget_links">
-                            <h2 class="widget-title">Quick Link</h2>
-                            <div class="widget-content">
-                                <ul>
-                                                                            <li><a href="">
+                        <!--~~~~~ Start Widget Links ~~~~~-->
+                        <div class="col-lg-2">
+                            <aside class="widget widget_links">
+                                <h2 class="widget-title">Quick Link</h2>
+                                <div class="widget-content">
+                                    <ul>
+                                        <li><a href="./About.html">
                                                 About
                                             </a>
                                         </li>
-                                                                            <li><a href="">
+                                        <li><a href="./Faq.html">
                                                 Faq
                                             </a>
                                         </li>
-                                                                            <li><a href="">
+                                        <li><a href="./Category.html">
                                                 Category
                                             </a>
                                         </li>
-                                                                    </ul>
-                            </div>
-                        </aside>
-                    </div><!--~./ end links widget ~-->
+                                    </ul>
+                                </div>
+                            </aside>
+                        </div><!--~./ end links widget ~-->
 
-                    <!--~~~~~ Start Widget Links ~~~~~-->
-                    <div class="col-lg-2">
-                        <aside class="widget widget_links">
-                            <h2 class="widget-title">Help Center</h2>
-                            <div class="widget-content">
-                                <ul>
+                        <!--~~~~~ Start Widget Links ~~~~~-->
+                        <div class="col-lg-2">
+                            <aside class="widget widget_links">
+                                <h2 class="widget-title">Help Center</h2>
+                                <div class="widget-content">
+                                    <ul>
 
-                                                                            <li>
-                                            <a href="">
-                                                Privacy and Policy                                            </a>
+                                        <li>
+                                            <a href="./PrivacyAndPolicy.html">
+                                                Privacy and Policy </a>
                                         </li>
-                                                                            <li>
-                                            <a href="">
-                                                Terms and Condition                                            </a>
+                                        <li>
+                                            <a href="./TermsAndCondition.html">
+                                                Terms and Condition </a>
                                         </li>
-                                    
-                                    <li><a href="">Contact</a></li>
-                                </ul>
-                            </div>
-                        </aside>
-                    </div><!--~./ end links widget ~-->
 
-                    <!--~~~~~ Start Widget Links ~~~~~-->
-                    <div class="col-lg-4">
-                        <aside class="widget widget_payment">
-                            <h2 class="widget-title">Contact Info</h2>
-                            <div class="widget-content">
-                                <div class="contact-info">
+                                        <li><a href="./Contact.html">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </aside>
+                        </div><!--~./ end links widget ~-->
+
+                        <!--~~~~~ Start Widget Links ~~~~~-->
+                        <div class="col-lg-4">
+                            <aside class="widget widget_payment">
+                                <h2 class="widget-title">Contact Info</h2>
+                                <div class="widget-content">
+                                    <div class="contact-info">
                                         <div class="icon">
                                             <span class="icon-paperplane"></span>
                                         </div>
@@ -422,26 +360,26 @@
                                             </p>
                                         </div>
                                     </div><!-- /.contact-info -->
-                            </div>
-                        </aside>
-                    </div><!--~./ end payment widget ~-->
+                                </div>
+                            </aside>
+                        </div><!--~./ end payment widget ~-->
+                    </div>
                 </div>
-            </div>
-        </div><!--~./ end footer widgets area ~-->
+            </div><!--~./ end footer widgets area ~-->
 
-        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
             Start Footer Bottom Area
         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-        <div class="container">
-            <div class="footer-bottom d-flex flex-wrap-reverse justify-content-between align-items-center py-3">
-                <div class="copyright-text text-center">
-                    <div class="copyright text-white">
-                        Copyright © 2023 . All rights reserved
+            <div class="container">
+                <div class="footer-bottom d-flex flex-wrap-reverse justify-content-between align-items-center py-3">
+                    <div class="copyright-text text-center">
+                        <div class="copyright text-white">
+                            Copyright © 2023 . All rights reserved
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
 </div><!--~~./ end site content ~~-->
 
@@ -467,22 +405,15 @@
 
 
     <script>
-        function proPicURL(input) {
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
-                reader.onload = function(e) {
-                    var preview = $(input).parents('.profile-thumb').find('.profilePicPreview');
-                    $(preview).css('background-image', 'url(' + e.target.result + ')');
-                    $(preview).addClass('has-image');
-                    $(preview).hide();
-                    $(preview).fadeIn(650);
-                }
-                reader.readAsDataURL(input.files[0]);
-            }
-        }
-        $(".profilePicUpload").on('change', function() {
-            proPicURL(this);
-        });
+      $('.copyBoard').click(function(){
+        "use strict";
+            var copyText = document.getElementById("referralURL");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999);
+            /*For mobile devices*/
+            document.execCommand("copy");
+            iziToast.success({message: "Copied: " + copyText.value, position: "topRight"});
+      });
     </script>
 
 

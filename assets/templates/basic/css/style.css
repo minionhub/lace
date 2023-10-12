@@ -10589,8 +10589,12 @@ ul.dropdown-content > .dropdown-trigger:hover > ul.dropdown-content > li:hover >
   margin: 0;
 }
 
+.bg-dashborad-card {
+  background-color: #f74a05;
+}
+
 .custom--table .thead-dark th {
-  background: red;
+  background: #f74a05;
   border: none;
 }
 .custom--table .thead-dark th:last-child {
